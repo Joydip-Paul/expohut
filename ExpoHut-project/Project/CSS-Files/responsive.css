@@ -1,0 +1,140 @@
+/*Large Screen: 1280px*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /*Home Page Responsive Code*/
+  .Container {
+    width: 970px;
+  }
+  .Banner-Right {
+    flex-basis: 45%;
+  }
+  .Services-Items {
+    justify-content: space-evenly;
+  }
+  .Single-Items {
+    flex-basis: 28%;
+  }
+  .About-Left {
+    flex-basis: 62%;
+  }
+  .Footer-Items-one {
+    flex-basis: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 20%;
+  }
+}
+
+/*Medium Screen: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*Home Page Responsive Code*/
+  .Container {
+    width: 750px;
+  }
+  .Banner-Items {
+    text-align: center;
+  }
+  .Banner-Left,.Banner-Right {
+    flex-basis: 100%;
+  }
+  .Banner-Right {
+    margin-top: 40px;
+  }
+  .Services-Items {
+    justify-content: space-around;
+  }
+  .Single-Items {
+    flex-basis: 42%;
+  }
+  .About-Left {
+    flex-basis: 100%;
+    margin-bottom: 35px;
+  }
+  .About-Side-Video {
+    flex-basis: 100%;
+  }
+  .Footer-Items-one {
+    flex-basis: 50%;
+  }
+  .Footer-Items-one .SocialIcons {
+    width: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 20%;
+  }
+}
+
+/*Mobile Screen: 320px*/
+@media only screen and (max-width: 767px) {
+  .Container {
+    width: 310px;
+  }
+  .Banner-Items {
+    text-align: center;
+  }
+  .Banner-Left,.Banner-Right {
+    flex-basis: 100%;
+  }
+  .Banner-Right {
+    margin-top: 40px;
+  }
+  .Banner-Left h3 {
+    font-size: 36px;
+    margin-top: 10px;
+  }
+  .Banner-Left .btn {
+    padding: 15px 20px;
+    width: 142px;
+  }
+  .Title h4 {
+    font-size: 21px;
+    letter-spacing: 0px;
+  }
+  .Title p {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .Single-Items {
+    flex-basis: 100%;
+  }
+  .About-Left {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .About-Side-Video {
+    flex-basis: 100%;
+  }
+  .Footer-Items-one {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .Footer-Items-one .SocialIcons {
+    width: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 45%;
+  }
+  .Main-Footer p {
+    font-size: 13px;
+  }
+}
+
+/*Wide Mobile Screen: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .Container {
+    width: 450px;
+  }
+  .Title h4 {
+    font-size: 28px;
+    letter-spacing: 0px;
+  }
+  .Title p {
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+  .Single-Items {
+    flex-basis: 48%;
+  }
+  .Single-Items p {
+    font-size: 13px;
+  }
+}

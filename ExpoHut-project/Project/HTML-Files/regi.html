@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS-Files/loginRegstyle.css">
+    <link rel="stylesheet" href="../FontAwesome-Files/all.min.css">
+</head>
+<body>
+    <section class="regbg">
+    <div class="container">
+        <div class="MainFrame">
+            <div class="leftside">
+                <div class="logo">
+                    <a href="../Index.html"><img src="../Assets-Files/logo.jpg" alt=""></a>
+                </div>
+                <div class="logotitle">
+                    <p>ExpoHut</p>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="loginsignup-title">
+                    <h2>সাইন আপ</h2>
+                    <p id="signupDone">Sign Up Done Successfully</p>
+                </div>
+                <form action="" class="form" id="form">
+                    <!-- For Username -->
+                    <div class="form-control">
+                        <label for="username">নাম</label>
+                        <input type="text" placeholder="নাম" id="username">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Email -->
+                    <div class="form-control">
+                        <label for="email">ইমেইল</label>
+                        <input type="text" placeholder="ইমেইল" id="email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Mobile Number -->
+                    <div class="form-control">
+                        <label for="mobile">মোবাইল  নাম্বার</label>
+                        <input type="number" placeholder="০১৭৫৯৬৯৬৯৫৭" id="mobile">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Category -->
+                    <div class="form-control">
+                        <label for="category">ক্যাটাগরি</label>
+                        <select class="category">
+                            <option value="1">ক্রাফট শিল্প</option>
+                            <option value="2">চিত্র শিল্প</option>
+                            <option value="3">সেলাই শিল্প</option>
+                            <option value="4">হ্যান্ডমেইড জুয়েলারি</option>
+                            <option value="5">কুঠির শিল্প</option>
+                            <option value="6">মৃত্তিকা শিল্প</option>
+                          </select>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Address -->
+                    <div class="form-control">
+                        <label for="address">বর্তমান ঠিকানা</label>
+                        <input type="Address" placeholder="ঠিকানা" id="address">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Password -->
+                    <div class="form-control">
+                        <label for="password">পাসওয়ার্ড</label>
+                        <input type="password" placeholder="পাসওয়ার্ড" id="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <!-- For Password Check Again -->
+                    <!-- <div class="form-control">
+                        <label for="password">Again Password</label>
+                        <input type="password" placeholder="Enter password again" id="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div> -->
+                    <button id="signUp">সাইন আপ</button>
+                    <p class="LoginRegiFooter">আপনার কি একটি অ্যাকাউন্ট আছে? <a href="../HTML-Files/login.html"  style="text-decoration: none;">লগ ইন</a></p>
+                </form>   
+        </div>
+    </div>
+</section>
+<script src="../JavaScript-Files/app.js"></script>
+<script src="../JavaScript-Files/signUp.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head><!--meta tags are included-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript,React.js, Vue.js, Node.js, Express.js, MongoDB, MySql">
+    <meta name="description" content="Web-Based Application: Online Market Place(ExpoHut), Mobile Friendly Responsive Design">
+    <meta name="author" content="Team ExpoHut Developers(Joydip and Nayeem)">
+    <!--Page title goes here-->
+    <title>Expohut || Home</title>
+    <!--FontAwesome CSS CDN file linking-->
+    <link rel="stylesheet" href="../FontAwesome-Files/all.min.css">
+    <!--CSS Responsive code file linking-->
+    <link rel="stylesheet" href="">
+    <!--Custom CSS styling file linking-->
+    <link rel="stylesheet" href="../CSS-Files/Home.css">
+    <link rel="stylesheet" href="../CSS-Files/CardDescription.css">
+    <!--All Crafts Responsive CSS File Linking-->
+    <link rel="stylesheet" href="../CSS-Files/crafts-responsive.css">
+    <!-- Carousel link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--Vue.js CDN File Linking-->
+    <link rel="stylesheet" href="JavaScript-Files/vue.js">
+  </head>
+  <script>
+    function toggle(){
+        var header = document.getElementById("header");
+        header.classList.toggle('active');
+    }
+</script>
+  <body>
+    <header id="header"> <!--Header Start-->
+      <a href="../Index.html" class="logo"><img src="../Assets-Files/Logo.png" alt="ExpoHut Logo"></a>
+      <ul>
+        <li><a href="../Index.html" onclick="toggle()">হোম</a></li>
+        <li><a href="../HTML-Files/login.html" onclick="toggle()"><i class="fas fa-sign-out-alt"></i> সাইন আউট</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header> <!--Header End-->
+
+
+    <section class="Container mrit">
+        <div class="MritShilpo-title">
+            <h1>নান্দনিক মৃৎশিল্প</h1>
+            <!-- <p>বর্তমানে আধুনিকতার ছোঁয়া লাগায় এই শিল্পে অনেকটা ভাটা পড়লেও নতুন করে মৃৎশিল্পের আর একটি শাখা উন্মােচিত হয়েছে। সেটি হলাে নান্দনিক মৎশিল্প। এ শাখার মৎশল্পীরা মাটি দিয়ে বিভিন্ন শৌখিনসামগ্রী ও শিল্পকর্ম তৈরি করে থাকেন, ইংরেজিতে একে বলা হয় পটারি শিল্প। এরা টেরাকোটা বা মৃৎফলকে খােদাই করে সুন্দর সুন্দর শােপিস তৈরি করেন। এ ছাড়া বিভিন্ন মূর্তি, অলঙ্কার, নকশি পাত্র, ঘণ্টা ইত্যাদি তৈরি করছেন।</p> -->
+            <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+                <div class="carousel-cell">
+                  <img class="w3-image" src="../Assets-Files/carousel1.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="../Assets-Files/carousel2.jpg">
+                </div>
+                <div class="carousel-cell">
+                    <img class="w3-image" src="../Assets-Files/carousel3.jpg">
+                </div>
+              </div>
+            <p class="TopPost">টপ পোষ্ট</p>
+        </div>
+        <div class="UserPost">
+            <div class="LeftImg">
+                <img src="../Assets-Files/mrit.jpg" alt="">
+            </div>
+            <div class="RightDecription">
+                <h2>মাটির ফুলদানি </h2>
+                <p>ফুলদানির বহুমুখী ব্যবহার ঘরের সৌন্দর্য বাড়িয়ে দেয় দ্বিগুণ। টেবিল থেকে শুরু করে টিভির ওপর, কর্নার টেবিল, বেডসাইট কিংবা শোকেস যেখানেই রাখুন না কেন সুন্দর মানিয়ে যাবে৷ ভোলা মৃৎশিল্পের এই ফুলদানি গুলো। </p>
+                <p class="price">৳ ১০৫০</p>
+                <div class="ButtonRating">
+                    <button>পোষ্টকারির প্রোফাইল</button>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p><i class="fas fa-thumbs-up" id="likeButton"></i><span id="likeCount">10</span></p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="UserPost">
+            <div class="LeftImg">
+                <img src="../Assets-Files/hati.jpg" alt="">
+            </div>
+            <div class="RightDecription">
+                <h2>মাটির শোপিস </h2>
+                <p>ঘরের শোভা বাড়াতে প্রয়োজন শো-পিস।আর দেশীয় পণ্য দিয়ে তৈরি শোপিসের মধ্যে সবচেয়ে জনপ্রিয় ও নান্দনিক হচ্ছে মাটির শোপিস।একদিকে তা যেমন আপনার রুচির পরিচয় বহন করবে, অন্যদিকে আমাদের দেশীয় ঐতিহ্য ও সংস্কৃতিকে মানুষের কাছে তুলে ধরবে।</p>
+                <p class="price">৳ ৭২৫</p>
+                <div class="ButtonRating">
+                  <button><a href="./profile.html">পোষ্টকারির প্রোফাইল</a></button>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p><i class="fas fa-thumbs-up"></i> 20</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="UserPost">
+            <div class="LeftImg">
+                <img src="../Assets-Files/tob.jpg" alt="">
+            </div>
+            <div class="RightDecription">
+                <h2>মাটির টব </h2>
+                <p>পরিবেশ ও গাছের সুরক্ষায় প্লাস্টিকের পরিবর্তে মাটির টবের কোন বিকল্প নেই। মাটির টবে গাছের জন্য দেয়া মাটি থাকে আর্দ্র, গাছে পানি দিলে সেটা সমমাত্রায় শোষিত হয়। গাছের জন্য মাটির টব অনেক বেশী উপকারী। গাছের গোঁড়া ঠাণ্ডা থাকে । মাটির টব অনেক বেশী পানি শোষণ ও ধরে রাখতে পারে। সর্বোপরি ঘরের বা বাগানের শ্রী বৃদ্ধি করে।</p>
+                <p class="price">৳ ৮০</p>
+                <div class="ButtonRating">
+                  <button><a href="./profile.html">পোষ্টকারির প্রোফাইল</a></button>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p><i class="fas fa-thumbs-up"></i> 20</p>
+                </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+    <section class="Top-Footer"> <!--Top Footer Start-->
+      <div class="Container"> <!--Container Start-->
+        <div class="Top-Footer-Items">
+          <div class="Footer-Items-one">
+            <h4>এক্সপোহাট</h4>
+            <div class="Title-Bar"></div>
+            <p>এক্সোহাট হছে এমন একটি মাধ্যম যেখানে আপনি বিক্রি করতে পারবেন আপনার তৈরিকৃত শিল্প। সৃজনশীল এবং মননশীল মানুষদের জন্য এক্সপোহাট হছে প্রতিভা বিকশিত করার উত্তম জায়গা। আপনি যদি ছবি আকতে পারেন,মাটির গহনা তৈরি করতে পারেন, কাঠের বিভিন্ন সোপিজ বানাতে পারেন এছাড়াও আরও অনেক প্রতিভার একটিও যদি আপনি শখের বসেও করে থাকেন তবে তা এক্সপোহাটে বিজ্ঞাপন দিন।</p>
+            <p>-আপনার পছন্দ অনুযায়ী মূল্য নির্ধারন করে পোষ্ট করেন আপনার প্রোফাইলে।</p>
+              <p>-চাইলে আপনিও কিনে নিতে পারেন আপনার পছন্দের জিনিসটি এক্সপোহাট থেকে।</p>
+            <nav class="SocialIcons">
+              <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="Footer-Items-Two">
+            <h4>ক্যাট্যাগরি</h4>
+            <div class="Title-Bar"></div>
+            <ul>
+              <li><a href="../HTML-Files/Craft.html"><i class="fas fa-angle-right"></i> ক্রাফট শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> চিত্র শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> সেলাই শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> কুটির শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> হ্যান্ডমেইড জুয়েলারি</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> ফ্যাব্রিক নকশা</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> মৃত্তিকা শিল্প</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> ওডেন ক্রাফট</a></li>
+            </ul>
+          </div>
+          <div class="Footer-Items-Three">
+            <h4>আরও জানুন</h4>
+            <div class="Title-Bar"></div>
+            <ul>
+              <li><a href=""><i class="fas fa-angle-right"></i> get registered</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> watch demo</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> join us</a></li>
+              <li><a href=""><i class="fas fa-angle-right"></i> dev contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> <!--Container End-->
+    </section> <!--Top Footer End-->
+
+    <footer class="Main-Footer"> <!--Main Footer Start-->
+      <div class="Container">
+        <p>copyright &copy; 2020 all right reserved <span style="color: #17b978;">team expohut</span></p>
+      </div>
+    </footer> <!--Main Footer End-->
+
+    <!--JavaScript File Linking-->
+    <script>
+      const likeButton = document.getElementById('likeButton');
+      likeButton.addEventListener("click", () => {
+        // console.log("clicked");
+        const likeCount = document.getElementById('likeCount').innerText;
+        // console.log(likeCount);
+        let newCount = Number.parseInt(likeCount);
+        // console.log(newCount);
+        newCount = newCount + 1;
+        document.getElementById('likeCount').innerText = newCount;
+      })
+    </script>
+    <script src="JavaScript-Files/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>

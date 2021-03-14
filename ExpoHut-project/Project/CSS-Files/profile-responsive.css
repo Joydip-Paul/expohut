@@ -1,0 +1,13 @@
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Container {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .Container {
+    width: 750px;
+  }
+  .profile .image-box {
+    flex-basis: 35%;
+  }
+}

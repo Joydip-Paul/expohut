@@ -1,0 +1,82 @@
+/*This Responsive Code is written for all the product item pages*/
+/*Large-Screen: 1280px*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .Container {
+    width: 970px;
+  }
+  .Footer-Items-one {
+    flex-basis: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 20%;
+  }
+}
+
+/*Medium-Screen: 768px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .Container {
+    width: 750px;
+  }
+  .LeftImg {
+    flex-basis: 40%;
+  }
+  .RightDecription {
+    flex-basis: 55%;
+  }
+  .rating {
+    margin-left: 7rem;
+  }
+  .Footer-Items-one {
+    flex-basis: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 20%;
+  }
+}
+
+/*Mobile-Screen: 320px*/
+@media only screen and (max-width: 767px) {
+  .Container {
+    width: 320px;
+  }
+  .w3-image {
+    width: 100%;
+    height: 100%;
+  }
+  .LeftImg {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .RightDecription {
+    flex-basis: 100%;
+  }
+  .RightDecription button {
+    font-size: 12px;
+  }
+  .rating {
+    margin-left: 3rem;
+  }
+  .Footer-Items-one {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .Footer-Items-one .SocialIcons {
+    width: 50%;
+  }
+  .Footer-Items-Two,.Footer-Items-Three {
+    flex-basis: 45%;
+  }
+}
+
+/*Wide Mobile-Screen: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .Container {
+    width: 460px;
+  }
+  .RightDecription button {
+    font-size: 15px;
+  }
+  .rating {
+    margin-left: 10rem;
+  }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../CSS-Files/bootstrap.min.css">
+    <link rel="stylesheet" href="../FontAwesome-Files/all.min.css" />
+    <link rel="stylesheet" href="../CSS-Files/loginRegstyle.css" />
+    <style>
+        .loginSuccessful{
+            background-color: aliceblue;
+            padding: 10px;
+            height: 150px;
+            width: 180px;
+            border-radius: 5px;
+            display: none;
+            margin-top: 10px;
+        }
+        .loginSuccessful a{
+            background-color: forestgreen;
+            padding: 10px 40px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="modal-area">
+        <div class="container" id="mod-con">
+            <!-- Modal -->
+            
+        </div>
+    </section>
+
+    <section class="loginbg">
+      <div class="container">
+        <div class="MainFrame">
+          <div class="leftside">
+            <div class="logo">
+              <a href="../Index.html">
+                <img src="../Assets-Files/logo.jpg" alt=""
+              /></a>
+            </div>
+            <div class="logotitle">
+              <p>ExpoHut</p>
+            </div>
+          </div>
+          <div class="rightside">
+            <div class="loginsignup-title">
+              <h2>লগ ইন</h2>
+            </div>
+            <form action="" class="form" id="form" autocomplete="off">
+              <!-- For Email -->
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  id="loginemail"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <!-- For Password -->
+              <div class="form-control">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter password"
+                  id="loginpassword"
+                  autocomplete="off"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <button id="loginBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+              <p class="LoginRegiFooter">
+                এখনো কোনো অ্যাকাউন্ট নেই আপনার?<a
+                  href="../HTML-Files/regi.html"
+                  style="text-decoration: none"
+                >
+                  সাইন আপ</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Log in validate start
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        loginvalidate();
+      });
+      function setErrorFor(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector("small");
+        formControl.className = "form-control error";
+        small.innerText = message;
+      }
+      function setSuccessFor(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = "form-control success";
+      }
+      function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+          email
+        );
+      }
+      const LoginEmail = document.getElementById("loginemail");
+      const LoginPassword = document.getElementById("loginpassword");
+      function loginvalidate() {
+        // Email Section
+        const LoginEmailValue = LoginEmail.value.trim();
+        const LoginPasswordValue = LoginPassword.value.trim();
+        if (LoginEmailValue === "") {
+          setErrorFor(LoginEmail, "আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
+        } else if (!isEmail(LoginEmailValue)) {
+          setErrorFor(
+            LoginEmail,
+            "অনুগ্রহ করে একটি কার্যকর ইমেইল অ্যাড্রেস লিখুন।"
+          );
+        } else {
+          setSuccessFor(LoginEmail);
+        }
+        // Password Section
+        if (LoginPasswordValue === "") {
+          setErrorFor(LoginPassword, "আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
+        } else if (LoginPasswordValue.lenght < 6) {
+          setErrorFor(LoginPassword, "আপনাকে অবশ্যই এই ফিল্ডটি পূরণ করতে হবে।");
+        } else {
+          setSuccessFor(LoginPassword);
+        }
+      }
+    //   const loginButton = document.getElementById("loginBtn");
+    //   loginButton.addEventListener("click", () => {
+    //     const loginEmail = document.getElementById("loginemail").value;
+    //     const loginPassword = document.getElementById("loginpassword").value;
+
+    //     const loginObj = {
+    //         loginEmail: loginEmail,
+    //         loginPassword: loginPassword,
+    //     };
+    //     localStorage.setItem('loginObj', JSON.stringify(loginObj));
+        
+    //     let getLogin = localStorage.getItem('loginObj');
+    //     let getL = ('getLogin', JSON.parse(getLogin));
+    //     console.log(getL.loginEmail, getL.loginPassword);
+
+    //     let getSignUp = localStorage.getItem('signupObj');
+    //     let getS = ('getSignUp', JSON.parse(getSignUp));
+    //     console.log(getS.userEmail, getS.userPassword);
+
+    //     if ((getL.loginEmail === getS.userEmail) && (getL.loginPassword === getS.userPassword)) {
+
+
+    //     } else {
+    //         alert('Sorry!');
+    //     }
+    //   });
+    </script>
+    <script src="../JavaScript-Files/popper.min.js"></script>
+     <script src="../JavaScript-Files/bootstrap.min.js"></script>
+    <script src="../JavaScript-Files/login.js"></script>
+  </body>
+</html>

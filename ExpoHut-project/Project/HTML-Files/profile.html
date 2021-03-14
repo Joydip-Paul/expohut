@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head><!--meta tags are included-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML, CSS, SASS, JavaScript,React.js, Vue.js, Node.js, Express.js, MongoDB, MySql">
+    <meta name="description" content="Web-Based Application: Online Market Place(ExpoHut), Mobile Friendly Responsive Design">
+    <meta name="author" content="Team ExpoHut Developers(Joydip and Nayeem)">
+    <!--Page title goes here-->
+    <title>Expohut || Home</title>
+    <!--FontAwesome CSS CDN file linking-->
+    <link rel="stylesheet" href="../FontAwesome-Files/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../CSS-Files/bootstrap.min.css">
+    <!--Custom CSS styling file linking-->
+    <link rel="stylesheet" href="../CSS-Files/Home.css">
+    <link rel="stylesheet" href="../CSS-Files/profile.css">
+    <!-- Carousel link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+  <script>
+    function toggle(){
+        var header = document.getElementById("header");
+        header.classList.toggle('active');
+    }
+  </script>
+  <body>
+    <header id="header"> <!--Header Start-->
+      <a href="../Index.html" class="logo"><img src="../Assets-Files/Logo.png" alt="ExpoHut Logo"></a>
+      <ul>
+          <li><a href="../Index.html" onclick="toggle()">হোম</a></li>
+          <li><a href="../HTML-Files/login.html" onclick="toggle()"><i class="fas fa-sign-out-alt"></i> সাইন আউট</a></li>
+          <li><a href="" onclick="toggle()"><i class="fas fa-heart"></i> My Store</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header> <!--Header End-->
+
+    <section class="profile-banner"><!--Profile Banner Start-->
+      <div class="Container">
+        <div class="profile-content">
+          <h1>ক্রাফট শিল্প</h1>
+          <p>জামিলা খানম</p>
+          <p>যোগাযোগঃ ০১৭১২৩৪৫৬৭৮</p>
+        </div>
+      </div>
+    </section><!--Profile Banner End-->
+
+    <section class="profile-generator"><!--Profile Generator-->
+      <div class="Container">
+        <div class="profile">
+          <div class="image-box">
+            <img src="../Assets-Files/nk.jpg" alt="">
+          </div>
+          <div class="profile-text">
+            <h3>নামঃ জামিলা খানম</h3>
+            <p>user-id: 1020</p>
+            <p>user-type: seller</p>
+            <p>product-category: craft shilpo</p>
+            <p>contact: 098765432</p>
+            <p>email: user.admin@gmail.com</p>
+            <p>seller-ratings: <span></span></p>
+          </div>
+          <div class="new-post">
+            <h3>পোস্ট করুন</h3>
+            <input type="file" accept="image/*" name="image"  id="product-file" onchange="loadFile(event)">
+            <input type="text" placeholder="Product-Name" id="product-name">
+            <textarea placeholder="Product Description" id="product-description"></textarea>
+            <input type="number" id="product-price" placeholder="Product price">
+            <input type="number" id="seller-contact" placeholder="Seller Contact">
+            <input type="number" id="stock" placeholder="Product Left In Stock">
+            <button class="post-btn" id="posting-btn">post</button>
+          </div>
+        </div>
+        <div class="products-title">
+          <h1>product list</h1>
+          <div class="Bar"></div>
+        </div>
+        <div class="products-gallery" id="pd-container">
+          
+        </div>
+      </div>
+    </section><!--Profile Generator End-->
+
+    <!--JavaScript File Linking-->
+    <!-- <script src="../JavaScript-Files/popper.min.js"></script>
+    <script src="../JavaScript-Files/bootstrap.min.js"></script> -->
+    
+    <script src="../JavaScript-Files/products.js"></script>
+  </body>
+</html>
